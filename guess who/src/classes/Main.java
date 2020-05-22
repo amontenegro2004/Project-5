@@ -5,14 +5,28 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 public class Main {
+	/* Main method to run the method below.
+	*/
 	public static void main(String[] args) {
 		
 		hi();
 			
 	}
 	
-	  
+	  /* The method hi() shows a dialog box of the information on the rules
+	  * of the game. Then it shows a dialog box if you want to play the game.
+	  * If not, it gives gredit and exits the program. But, if you do want to play,
+	  * it shows the list of characters that you must guess one of that the computer has
+	  * chosen. There are 8 questions to ask, a help button, and an exit button. Once you
+	  * ask the first question, the computer will answer, and it will increment the counter for
+	  * the number of questions asked. Once, the counter reaches 4, then you must guess who it is.
+	  * If guessed correctly, you win and shows the correct characyer and the credits. It then asks you
+	  / if you wan to play again, if so, it repeats the process, if not, it exits the program.
+	  * If you incorrectly guessed the character, then you lose and asks if you want to play again.
+	  *  If so, it repeats the process, if not, it exits the program.
+	  */
 	public static void hi() {
+		//INSTANCE VARIABLES
 		Object[] options10 = {"Yes","Exit"};
 		Object[] options11 = {"Yes","No"};
 		Object[] options = {"Yes","Exit"};	
